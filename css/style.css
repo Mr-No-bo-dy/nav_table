@@ -8,6 +8,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
+    padding: 20px 0;
     width: 960px;
 }
 
@@ -28,7 +29,7 @@ body {
 }
 
 thead tr,
-.table-css p#thead {
+.table-css p b {
     background-color: #2a3644;
 }
 
@@ -104,8 +105,8 @@ tr:first-child th:nth-child(2) {
 }
 
 td:first-child,
-#thead b+b,
-.table-css p i:first-child {
+.table-css b:nth-child(2)~b,
+.table-css i:first-child {
     text-align: center;
 }
 
