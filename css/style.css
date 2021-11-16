@@ -17,6 +17,7 @@ body {
     font-weight: bold;
     font-size: 24px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .table-html,
@@ -68,12 +69,12 @@ tr:first-child>th:last-child {
 }
 
 tbody tr:nth-child(odd),
-.table-css p:nth-child(odd) {
+.table-css p:nth-child(even) {
     background-color: #f2f2f2;
 }
 
 tbody tr:nth-child(even),
-.table-css p:nth-child(even) {
+.table-css p:nth-child(odd) {
     background-color: #e8e8e8;
 }
 
@@ -98,15 +99,18 @@ td,
     color: #2a3644;
 }
 
-.text-left {
+tr:first-child th:nth-child(2) {
     text-align: left;
 }
 
-.text-center {
+td:first-child,
+#thead b+b,
+.table-css p i:first-child {
     text-align: center;
 }
 
-.text-right {
+td:nth-child(2)~td,
+.table-css i:nth-child(2)~i {
     text-align: right;
 }
 
