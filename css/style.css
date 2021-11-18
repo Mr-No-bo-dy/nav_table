@@ -21,6 +21,149 @@ body {
     text-transform: uppercase;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    margin: 50px 0;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a3644;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.menu>li:not(:first-child) {
+    border-left: 1px solid #3f4852;
+}
+
+.menu>li:not(:last-child) {
+    border-right: 1px solid #3f4852;
+}
+
+.menu>li,
+.in-menu>li,
+.in-in-menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.in-menu,
+.in-in-menu,
+.in-in-in-menu {
+    position: absolute;
+    display: none;
+}
+
+.menu>li:hover>ul,
+.in-menu>li:hover>ul,
+.in-in-menu>li:hover>ul {
+    display: block;
+}
+
+.menu>li>a {
+    color: #fff;
+    background-color: #2a3644;
+}
+
+.menu>li:hover>a {
+    color: #fd8612;
+    background-color: #3f4852;
+}
+
+.in-menu a {
+    padding: 12px 20px;
+    width: 211px;
+    color: #2a3644;
+    background-color: #d2d4d5;
+}
+
+.in-menu li:hover>a {
+    color: #fd8612;
+    background-color: #2a3644;
+}
+
+.menu1>li:last-child>ul {
+    right: 0;
+}
+
+.in-in-menu {
+    left: 100%;
+    top: 0;
+}
+
+.in-in-in-menu {
+    right: 100%;
+    top: 0;
+}
+
+.menu3>li:first-child a {
+    position: relative;
+}
+
+.menu3>li:first-child a::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 16px;
+    height: 13px;
+    background-image: url(../img/sprites.png);
+    background-position: 102px 28px;
+}
+
+.social>li {
+    display: inline-block;
+    margin: 12px;
+}
+
+.social a {
+    display: block;
+    background: url(../img/sprites.png) no-repeat;
+}
+
+a.facebook {
+    width: 10px;
+    height: 19px;
+    background-position: 0 -22px;
+}
+
+a.facebook:hover {
+    background-position: 0 0;
+}
+
+a.twitter {
+    width: 18px;
+    height: 15px;
+    background-position: -13px -22px;
+}
+
+a.twitter:hover {
+    background-position: -13px 0;
+}
+
+a.instagram {
+    width: 19px;
+    height: 19px;
+    background-position: -36px -22px;
+}
+
+a.instagram:hover {
+    background-position: -36px 0;
+}
+
 .table-html,
 .table-css {
     width: 100%;
