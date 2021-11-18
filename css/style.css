@@ -71,6 +71,7 @@ nav {
 .in-menu>li:hover>ul,
 .in-in-menu>li:hover>ul {
     display: block;
+    z-index: 1;
 }
 
 .menu>li>a {
@@ -109,6 +110,11 @@ nav {
     top: 0;
 }
 
+.menu2 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
 .menu3>li:first-child a {
     position: relative;
 }
@@ -116,12 +122,12 @@ nav {
 .menu3>li:first-child a::before {
     content: "";
     position: absolute;
+    left: 9px;
     top: 15px;
-    left: 5px;
     width: 16px;
     height: 13px;
     background-image: url(../img/sprites.png);
-    background-position: 102px 28px;
+    background-position: -85px -28px;
 }
 
 .social>li {
