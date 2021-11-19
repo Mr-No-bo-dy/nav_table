@@ -25,8 +25,6 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
 nav {
@@ -42,15 +40,9 @@ nav {
 .menu a {
     display: inline-block;
     padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
     text-decoration: none;
-}
-
-.menu>li:not(:first-child) {
-    border-left: 1px solid #3f4852;
-}
-
-.menu>li:not(:last-child) {
-    border-right: 1px solid #3f4852;
 }
 
 .menu>li,
@@ -68,18 +60,21 @@ nav {
 }
 
 .menu>li:hover>ul,
+.menu th:hover>ul,
 .in-menu>li:hover>ul,
 .in-in-menu>li:hover>ul {
     display: block;
     z-index: 1;
 }
 
-.menu>li>a {
+.menu>li>a,
+.menu th>a {
     color: #fff;
     background-color: #2a3644;
 }
 
-.menu>li:hover>a {
+.menu>li:hover>a,
+.menu th:hover>a {
     color: #fd8612;
     background-color: #3f4852;
 }
@@ -110,24 +105,72 @@ nav {
     top: 0;
 }
 
+.menu>li:not(:last-child),
+.menu2 th:not(:last-child) {
+    border-right: 1px solid #3f4852;
+}
+
+.menu1>li:not(:first-child) {
+    border-left: 1px solid #3f4852;
+}
+
+.in-menu li:not(:last-child) {
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.menu>li:first-child>a {
+    border-radius: 9px 0 0 9px;
+}
+
+.menu>li:last-child>a {
+    border-radius: 0 9px 9px 0;
+}
+
+li:first-child>a {
+    border-radius: 9px 9px 0 0;
+}
+
+li:last-child>a {
+    border-radius: 0 0 9px 9px;
+}
+
 .menu2 {
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
+}
+
+.menu th {
+    position: relative;
+    padding: 0;
+}
+
+th a {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.in-menu a {
+    text-align: left;
+}
+
+.menu3 {
+    display: flex;
 }
 
 .menu3>li:first-child a {
     position: relative;
+    padding: 15px 30px 15px 45px;
 }
 
 .menu3>li:first-child a::before {
     content: "";
     position: absolute;
-    left: 9px;
-    top: 15px;
+    left: 20px;
+    top: 16px;
     width: 16px;
     height: 13px;
     background-image: url(../img/sprites.png);
-    background-position: -85px -28px;
+    background-position: -102px -28px;
 }
 
 .social>li {
