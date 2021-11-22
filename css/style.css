@@ -34,15 +34,6 @@ nav {
 .flex-between {
     display: flex;
     justify-content: space-between;
-    background-color: #2a3644;
-}
-
-.menu a {
-    display: inline-block;
-    padding: 15px 30px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
 }
 
 .menu>li,
@@ -64,6 +55,33 @@ nav {
 .in-in-menu>li:hover>ul {
     display: block;
     z-index: 1;
+}
+
+.menu>li:hover>.in-menu2 {
+    left: 210px;
+}
+
+.in-in-menu {
+    left: 210px;
+    top: 0;
+}
+
+.in-in-in-menu {
+    right: 214px;
+    top: 0;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav>ul.menu1,
+nav.flex-between {
+    background-color: #2a3644;
 }
 
 .menu>li>a {
@@ -89,55 +107,62 @@ nav {
     background-color: #2a3644;
 }
 
-.menu1>li:last-child>ul {
-    right: 0;
+ul.menu,
+nav.flex-between {
+    border-radius: 3px;
 }
 
-.in-in-menu {
-    left: 100%;
-    top: 0;
+.menu>li:first-child>a {
+    border-radius: 3px 0 0 3px;
 }
 
-.in-in-in-menu {
-    right: 100%;
-    top: 0;
+.menu1>li:last-child>a,
+.menu2>li:last-child>a {
+    border-radius: 0 3px 3px 0;
+}
+
+.in-menu li:first-child>a {
+    border-radius: 3px 3px 0 0;
+}
+
+.in-menu li:last-child>a {
+    border-radius: 0 0 3px 3px;
+}
+
+.in-menu1>li:first-child>a {
+    border-radius: 3px 0 0 0;
+}
+
+.in-menu2>li:first-child>a {
+    border-radius: 0 3px 0 0;
 }
 
 .in-menu>li:first-child {
     border-top: 5px solid rgba(0, 0, 0, 0);
-
 }
 
-.menu>li:not(:last-child) {
-    border-right: 1px solid #3f4852;
+.border-r>li {
+    border-right: 5px solid rgba(0, 0, 0, 0);
+}
+
+.border-l>li {
+    border-left: 5px solid rgba(0, 0, 0, 0);
 }
 
 .menu1>li:not(:first-child) {
     border-left: 1px solid #3f4852;
 }
 
-.in-menu li:not(:last-child) {
+.menu>li:not(:last-child) {
+    border-right: 1px solid #3f4852;
+}
+
+.in-menu li:not(:last-child) a {
     border-bottom: 1px solid #b9bdc1;
 }
 
-.menu {
-    border-radius: 9px;
-}
-
-.menu>li:first-child>a {
-    border-radius: 9px 0 0 9px;
-}
-
-.menu>li:last-child>a {
-    border-radius: 0 9px 9px 0;
-}
-
-li:first-child>a {
-    border-radius: 9px 9px 0 0;
-}
-
-li:last-child>a {
-    border-radius: 0 0 9px 9px;
+.menu1>li:last-child>ul {
+    right: 0;
 }
 
 .display-table {
@@ -164,7 +189,7 @@ li:last-child>a {
 
 .menu3>li:first-child a {
     position: relative;
-    padding: 15px 30px 15px 45px;
+    padding-left: 45px;
 }
 
 .menu3>li:first-child a::before {
