@@ -57,10 +57,6 @@ nav {
     z-index: 1;
 }
 
-.menu>li:hover>.in-menu2 {
-    left: 210px;
-}
-
 .in-in-menu {
     left: 210px;
     top: 0;
@@ -129,6 +125,15 @@ nav.flex-between {
     border-radius: 0 0 3px 3px;
 }
 
+.menu3>li:nth-child(3):hover .in-menu {
+    display: flex;
+}
+
+.flex {
+    background-color: #d2d4d5;
+    border-radius: 3px;
+}
+
 .in-menu1>li:first-child>a {
     border-radius: 3px 0 0 0;
 }
@@ -137,7 +142,8 @@ nav.flex-between {
     border-radius: 0 3px 0 0;
 }
 
-.in-menu>li:first-child {
+.in-menu>li:first-child,
+.border-top {
     border-top: 5px solid rgba(0, 0, 0, 0);
 }
 
