@@ -161,6 +161,10 @@ nav.flex-between {
     border-bottom: 1px solid #b9bdc1;
 }
 
+.in-menu1 a {
+    border-right: 1px solid #b9bdc1;
+}
+
 .menu1>li:last-child>ul {
     right: 0;
 }
