@@ -59,12 +59,12 @@ ul {
 }
 
 .in-in-menu {
-    left: 210px;
+    left: 100%;
     top: 0;
 }
 
 .in-in-in-menu {
-    right: 214px;
+    right: calc(100% + 4px);
     top: 0;
 }
 
