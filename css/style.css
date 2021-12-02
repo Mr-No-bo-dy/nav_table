@@ -332,7 +332,7 @@ tbody tr:hover,
 }
 
 tbody tr:not(:last-child),
-.table-css p:not(:last-child) {
+.tbody:not(:last-child) {
     border-bottom: 1px solid #c0c1c2;
 }
 
@@ -343,7 +343,7 @@ tbody td:not(:last-child),
 
 td,
 .table-css p i {
-    padding: 14px 25px;
+    padding: 14px 25px 13px;
     color: #2a3644;
 }
 
@@ -378,6 +378,7 @@ tr:last-child>td:last-child,
 
 .table-css p {
     display: table-row;
+    margin: 0;
 }
 
 .table-css p b,
