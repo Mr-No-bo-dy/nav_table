@@ -291,17 +291,22 @@ thead th:not(:last-child),
 
 th,
 .table-css p b {
-    padding: 14px 25px;
+    padding: 14px 18px 14px 23px;
     color: #fff;
     font-weight: bold;
 }
 
-tr:first-child>th:first-child {
+/* tr:first-child>th:first-child {
     border-radius: 3px 0 0 0;
 }
 
 tr:first-child>th:last-child {
     border-radius: 0 3px 0 0;
+} */
+
+.table {
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .column-1 {
@@ -309,7 +314,7 @@ tr:first-child>th:last-child {
 }
 
 .column-2 {
-    width: 52.5%;
+    width: 53.5%;
 }
 
 .column-3 {
@@ -343,7 +348,7 @@ tbody td:not(:last-child),
 
 td,
 .table-css p i {
-    padding: 14px 25px 13px;
+    padding: 14px 18px 13px 23px;
     color: #2a3644;
 }
 
@@ -362,7 +367,7 @@ td:nth-child(2)~td,
     text-align: right;
 }
 
-tr:last-child>td:first-child,
+/* tr:last-child>td:first-child,
 .table-css p:last-child>i:first-child {
     border-radius: 0 0 0 3px;
 }
@@ -370,7 +375,7 @@ tr:last-child>td:first-child,
 tr:last-child>td:last-child,
 .table-css p:last-child>i:last-child {
     border-radius: 0 0 3px 0;
-}
+} */
 
 .table-css {
     display: table;
